@@ -1,0 +1,17 @@
+This program demonstrates a **friend/non-member operator** by overloading the `+` operator outside the class.
+
+The `Number` class contains a private data member `value`. The `operator+()` function is declared as a `friend` inside the class, but it is defined outside the class, so it is a non-member function.
+
+Because it is a friend function, `operator+()` can directly access the private `value` members of both objects.
+
+In the `main()` function, two objects are created with values `10` and `20`. The statement `n3 = n1 + n2` calls the overloaded `+` operator and adds their values.
+
+The resulting object contains the value `30`, which is displayed using `display()`.
+
+**Output:**
+
+```text id="4e1f8s"
+30
+```
+
+Thus, the program demonstrates how a non-member friend function can be used to overload an operator and access private class data.
