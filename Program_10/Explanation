@@ -1,0 +1,24 @@
+This program demonstrates **run-time polymorphism using a base-class reference and a virtual function**.
+
+The `Shape` class contains a virtual function named `area()`. The `Rectangle` and `Circle` classes inherit from `Shape` and override the `area()` function with their own area calculations.
+
+The `Rectangle` class calculates its area using:
+
+`length × width`
+
+The `Circle` class calculates its area using:
+
+`π × radius × radius`
+
+The `printArea()` function accepts a `const Shape&` reference. Because `area()` is virtual, the correct derived-class version is selected at run time.
+
+In `main()`, a rectangle with length `5` and width `3` and a circle with radius `2` are created. Both objects are passed to `printArea()`.
+
+**Output:**
+
+```text
+Area: 15
+Area: 12.5664
+```
+
+Thus, the program demonstrates how a base-class reference can preserve run-time polymorphism and call the appropriate derived-class implementation.
