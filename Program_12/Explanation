@@ -1,0 +1,26 @@
+### Program 12: Collection of Polymorphic Shape Pointers
+
+**Aim:**
+To process different derived objects through a common abstract base interface.
+
+**Description:**
+The program demonstrates run-time polymorphism using an abstract `Shape` class. The `Shape` class contains two pure virtual functions: `area()` and `displayName()`.
+
+`Rectangle` and `Circle` inherit from `Shape` and provide their own implementations of these functions.
+
+A `vector` of `unique_ptr<Shape>` is used to store different derived shape objects through the common `Shape` interface. The program then uses a loop to access each object and calls `displayName()` and `area()`.
+
+Because the functions are virtual, the appropriate function belonging to the actual object, such as `Rectangle` or `Circle`, is executed.
+
+**Main points:**
+
+* `Shape` is an abstract base class.
+* `area()` and `displayName()` are pure virtual functions.
+* `Rectangle` and `Circle` override these functions.
+* `std::unique_ptr<Shape>` safely manages the derived objects.
+* `vector` stores multiple polymorphic shape objects.
+* Virtual functions provide run-time polymorphism.
+* The virtual destructor ensures proper cleanup.
+
+**Output:**
+The program displays the name and area of each shape stored in the collection.
