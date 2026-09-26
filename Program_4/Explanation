@@ -1,0 +1,20 @@
+This program demonstrates **operator overloading** for both the prefix and postfix increment operators.
+
+The `Number` class contains a data member `value` and a constructor to initialize it.
+
+The `operator++()` function overloads the **prefix increment operator**. When `++n` is used, the value is incremented first.
+
+The `operator++(int)` function overloads the **postfix increment operator**. The `int` parameter distinguishes it from the prefix version. It stores the original value, increments the actual value, and returns the original value.
+
+In the `main()` function, the object is initially created with the value `5`.
+
+After `++n`, the value becomes `6`. Then `n++` increases it to `7`.
+
+**Output:**
+
+```text id="q1y1tv"
+6
+7
+```
+
+Thus, the program demonstrates how both prefix and postfix increment operators can be overloaded for a class.
