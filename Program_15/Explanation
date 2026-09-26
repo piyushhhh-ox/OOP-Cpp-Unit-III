@@ -1,0 +1,25 @@
+### Program 15: Payment Processing System
+
+**Aim:**
+To implement a real-world polymorphic payment system.
+
+**Description:**
+The program demonstrates run-time polymorphism using a payment system. `Payment` is an abstract base class containing the pure virtual function `pay()`.
+
+Three derived classes are created: `CardPayment`, `UpiPayment`, and `NetBankingPayment`. Each class provides its own implementation of the `pay()` function.
+
+The `processPayment()` function accepts a reference to the base class `Payment`. Therefore, it can process different types of payment objects using the same function.
+
+When `processPayment()` is called, the appropriate `pay()` function is selected according to the actual payment object.
+
+**Main points:**
+
+* `Payment` is an abstract base class.
+* `pay()` is a pure virtual function.
+* `CardPayment`, `UpiPayment`, and `NetBankingPayment` override `pay()`.
+* `processPayment()` uses a base-class reference.
+* Run-time polymorphism selects the correct payment method.
+* A virtual destructor is provided in the base class.
+
+**Output:**
+The program processes payments using card, UPI, and net banking and displays the corresponding payment method.
