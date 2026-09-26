@@ -1,0 +1,35 @@
+### Program 16: Employee Payroll Mini-Project
+
+**Aim:**
+To build a salary-calculation application using abstract classes and run-time polymorphism.
+
+**Description:**
+The program creates a simple employee payroll system using an abstract `Employee` class. The class stores common employee information such as employee ID and name.
+
+`Employee` contains the pure virtual function `calculateSalary()`, which must be implemented by derived classes.
+
+Two derived classes are created:
+
+1. **PermanentEmployee** — calculates salary by adding basic salary and allowance.
+2. **ContractEmployee** — calculates salary by multiplying hourly rate by hours worked.
+
+The `printPaySlip()` function accepts an `Employee` reference. Because `calculateSalary()` is virtual, the correct salary calculation is selected according to the actual employee type.
+
+**Salary calculations:**
+
+* Asha: `40000 + 8000 = Rs. 48000`
+* Vikas: `500 × 80 = Rs. 40000`
+
+**Main concepts used:**
+
+* Abstract base class
+* Pure virtual function
+* Inheritance
+* Function overriding
+* Run-time polymorphism
+* Base-class reference
+* Virtual destructor
+* Constructors and initialization lists
+
+**Conclusion:**
+The program demonstrates how polymorphism can be used to process different types of employees through a common `Employee` interface while allowing each employee type to calculate its salary differently.
