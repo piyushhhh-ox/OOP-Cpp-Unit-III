@@ -1,0 +1,16 @@
+This program demonstrates **function overloading** by calculating the area of different shapes using the same function name `calculate()`.
+
+The `Area` class contains two overloaded `calculate()` functions. The first function accepts one argument, `side`, and calculates the area of a square. The second function accepts two arguments, `length` and `breadth`, and calculates the area of a rectangle.
+
+In the `main()` function, an object `a` of the `Area` class is created. The statement `a.calculate(5)` calls the square version, while `a.calculate(5, 10)` calls the rectangle version.
+
+The compiler selects the appropriate function based on the number of arguments supplied.
+
+**Output:**
+
+```text
+Square Area: 25
+Rectangle Area: 50
+```
+
+Thus, the program demonstrates how function overloading can be used to calculate different areas using the same function name.
