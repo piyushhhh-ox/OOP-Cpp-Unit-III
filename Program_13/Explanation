@@ -1,0 +1,29 @@
+### Program 13: Virtual Destructor
+
+**Aim:**
+To demonstrate correct destruction of a derived object through a base pointer.
+
+**Description:**
+The program demonstrates the use of a virtual destructor in a base class. The `Base` class contains a virtual destructor, while the `Derived` class has its own destructor.
+
+Inside `main()`, a `Derived` object is created using a `Base*` pointer. When `delete pointer` is executed, the virtual destructor ensures that the `Derived` destructor runs first, followed by the `Base` destructor.
+
+The output therefore shows:
+
+1. `Derived destructor`
+2. `Base destructor`
+
+This demonstrates why a virtual destructor is important when deleting derived objects through base-class pointers.
+
+**Main points:**
+
+* `Base` has a virtual destructor.
+* `Derived` overrides the destructor.
+* A `Base*` points to a `Derived` object.
+* `delete pointer` deletes the object through the base pointer.
+* The derived destructor executes first.
+* The base destructor executes after it.
+* This ensures correct destruction of the polymorphic object.
+
+**Key Learning:**
+When deleting through a base pointer, a virtual base destructor ensures that both derived and base destructors execute.
