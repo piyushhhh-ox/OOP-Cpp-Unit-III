@@ -1,0 +1,17 @@
+This program demonstrates the behavior of a **base class pointer without a virtual function**.
+
+The `Base` class contains a `show()` function. The `Derived` class inherits from `Base` and defines its own `show()` function.
+
+In the `main()` function, a `Derived` object `d` is created. A pointer of type `Base*` is then made to point to the `Derived` object.
+
+When `ptr->show()` is called, the `show()` function of the **Base class** is executed because `show()` is not declared as `virtual`.
+
+This demonstrates that without a virtual function, the function call through a base pointer is resolved to the base class function.
+
+**Output:**
+
+```text id="f7c8mp"
+Base class
+```
+
+Thus, the program demonstrates base pointer behavior when the function is not virtual.
