@@ -1,0 +1,24 @@
+This program demonstrates **operator overloading** by using the `+` operator to add two complex numbers.
+
+The `Complex` class contains two data members: `real` for the real part and `imag` for the imaginary part.
+
+The `operator+()` function overloads the `+` operator. It adds the real parts of two complex numbers separately and also adds their imaginary parts.
+
+In the `main()` function, two complex numbers are created:
+
+* `c1 = 3 + 4i`
+* `c2 = 2 + 5i`
+
+The statement `c3 = c1 + c2` calls the overloaded `+` operator and produces:
+
+`c3 = 5 + 9i`
+
+The `display()` function then displays the resulting complex number.
+
+**Output:**
+
+```text id="k8x2pd"
+5 + 9i
+```
+
+Thus, the program demonstrates how the `+` operator can be overloaded to add two objects representing complex numbers.
