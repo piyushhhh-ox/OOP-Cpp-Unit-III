@@ -1,0 +1,21 @@
+This program demonstrates the use of an **abstract class and a pure virtual function**.
+
+The `Shape` class contains the pure virtual function `area()`, declared as:
+
+`virtual double area() const = 0;`
+
+Because the class contains a pure virtual function, `Shape` becomes an **abstract class**. It cannot be directly instantiated.
+
+The `Rectangle` class inherits from `Shape` and provides its own implementation of the `area()` function. The area is calculated using:
+
+`length × width`
+
+In the `main()` function, a rectangle with length `8` and width `4` is created. Its `area()` function is then called.
+
+**Output:**
+
+```text
+Rectangle Area: 32
+```
+
+Thus, the program demonstrates how an abstract class provides a common interface through a pure virtual function, which is implemented by the derived class.
