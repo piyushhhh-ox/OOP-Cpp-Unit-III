@@ -1,0 +1,16 @@
+This program demonstrates **function overloading**, which is a form of compile-time polymorphism.
+
+The `Calculator` class contains two functions with the same name, `add()`. The first function accepts two integer values, while the second accepts two float values.
+
+In the `main()` function, an object `c` of the `Calculator` class is created. When `c.add(10, 20)` is called, the integer version of the function is selected. When `c.add(10.5f, 20.5f)` is called, the float version is selected.
+
+The compiler determines which function to call based on the number and type of arguments passed to it.
+
+**Output:**
+
+```text
+30
+31
+```
+
+Thus, the program demonstrates how the same function name can perform different operations depending on the arguments supplied.
