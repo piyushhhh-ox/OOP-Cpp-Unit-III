@@ -1,0 +1,22 @@
+This program demonstrates **operator overloading** by overloading the greater-than (`>`) operator to compare two distance objects.
+
+The `Distance` class contains a data member `meter` that stores the distance in meters. The constructor initializes the distance when an object is created.
+
+The `operator>()` function overloads the greater-than operator. It compares the `meter` values of two `Distance` objects and returns `true` if the first distance is greater.
+
+In the `main()` function, two objects are created:
+
+* `d1 = 100 meters`
+* `d2 = 80 meters`
+
+The condition `d1 > d2` uses the overloaded operator to compare the two distances.
+
+Since 100 is greater than 80, the program displays:
+
+**Output:**
+
+```text
+d1 is greater
+```
+
+Thus, the program demonstrates how an operator can be overloaded to compare objects of a class.
