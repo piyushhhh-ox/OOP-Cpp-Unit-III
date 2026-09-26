@@ -1,0 +1,17 @@
+This program demonstrates **runtime polymorphism using a virtual function**.
+
+The `Base` class contains a virtual function `show()`. The `Derived` class inherits from `Base` and overrides the `show()` function.
+
+In the `main()` function, a `Derived` object is created. A pointer of type `Base*` is then made to point to the `Derived` object.
+
+When `ptr->show()` is called, the `show()` function of the **Derived class** is executed because the function is declared as `virtual` in the base class.
+
+This allows the function call to be resolved at runtime according to the actual object being pointed to.
+
+**Output:**
+
+```text
+Derived class
+```
+
+Thus, the program demonstrates how a virtual function enables runtime polymorphism through a base class pointer.
